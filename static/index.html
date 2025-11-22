@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>AI Chat App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FAVICON SETUP (Correct + Clean) -->
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="chat-container">
+
+        <header class="header">
+            <h1>AI Chat App</h1>
+            <p>Portfolio Project • FastAPI Backend • Vanilla JS Frontend</p>
+        </header>
+
+        <div id="chat-window" class="chat-window">
+            <div class="message system" id="system-msg">
+                Messages will appear here…
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing" class="typing hidden">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+            <input
+                id="user-input"
+                type="text"
+                placeholder="Type your message..."
+                autocomplete="off"
+            />
+            <button id="send-btn" type="submit">Send</button>
+        </form>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
